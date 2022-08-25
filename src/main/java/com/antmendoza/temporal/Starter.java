@@ -32,7 +32,7 @@ public class Starter {
         SslContextBuilderProvider sslContextBuilderProvider = new SslContextBuilderProvider();
 
         WorkflowServiceStubs service =
-                WorkflowServiceStubs.newServiceStubs(
+                WorkflowServiceStubs.newInstance(
                         WorkflowServiceStubsOptions.newBuilder()
                                 .setSslContext(sslContextBuilderProvider.getSslContext())
                                 .setTarget(sslContextBuilderProvider.getTargetEndpoint())

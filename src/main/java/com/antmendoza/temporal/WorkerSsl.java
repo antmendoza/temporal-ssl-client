@@ -20,7 +20,7 @@ public class WorkerSsl {
     // Create SSL enabled client by passing SslContext, created by SimpleSslContextBuilder.
     SslContextBuilderProvider sslContextBuilderProvider = new SslContextBuilderProvider();
     WorkflowServiceStubs service =
-        WorkflowServiceStubs.newServiceStubs(
+        WorkflowServiceStubs.newInstance(
             WorkflowServiceStubsOptions.newBuilder()
                 .setSslContext(sslContextBuilderProvider.getSslContext())
                 .setTarget(sslContextBuilderProvider.getTargetEndpoint())

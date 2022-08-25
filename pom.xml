@@ -23,7 +23,7 @@
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <temporal-sdk.version>1.13.0</temporal-sdk.version>
+        <temporal-sdk.version>1.8.1</temporal-sdk.version>
     </properties>
 
     <dependencies>
@@ -38,6 +38,17 @@
             <groupId>io.temporal</groupId>
             <artifactId>temporal-sdk</artifactId>
             <version>${temporal-sdk.version}</version>
+            <!--exclusions>
+                <exclusion>
+                    <groupId>com.google.protobuf</groupId>
+                    <artifactId>protobuf-java-util</artifactId>
+                </exclusion>
+            </exclusions-->
+        </dependency>
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java-util</artifactId>
+            <version>3.19.1</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
