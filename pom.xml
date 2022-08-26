@@ -23,7 +23,7 @@
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <temporal-sdk.version>1.13.0</temporal-sdk.version>
+        <temporal-sdk.version>1.15.1</temporal-sdk.version>
     </properties>
 
     <dependencies>
@@ -56,6 +56,17 @@
             <version>${temporal-sdk.version}</version>
             <scope>test</scope>
         </dependency>
+
+
+
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-services</artifactId>
+            <version>1.48.1</version>
+        </dependency>
+
+
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
